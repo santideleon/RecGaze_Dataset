@@ -4,7 +4,7 @@ This is the repository for the paper: `RecGaze: The First Eye Tracking and User 
 
 The public dataset can be downloaded from the Zenodo link: 
 
-For the public dataset, please reach out to the authors of the dataset. 
+For the non-public dataset, please reach out to the authors of the dataset. email: 
 
 Bibtex:
 
