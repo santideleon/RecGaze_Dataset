@@ -182,7 +182,7 @@ UvA_4 {20}
 
 
 ## Repository Guide
-| File Name | Explanation 
+| File/Folder Name | Explanation 
 | -------- | -------- | 
 | git_webpage_creation | Contains all the code for generating the carousel webpages used in the study. | 
 | git_webpage_creation\Final_Carousel_study_screen_[].html | The 40 (+1 one test screen called 00 for explaining the study to participants) html screens used in the study. | 
