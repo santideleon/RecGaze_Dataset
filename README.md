@@ -195,3 +195,4 @@ UvA_4 {20}
 | final_balanced_carousel_permutations_for_genre_search.json | JSON with the genre ordering of the semi-free browsing screens from 31 to 35. |
 | final_balanced_carousel_permutations_for_direct_search.json | JSON with the genre ordering of the direct search screens from 36 to 40. |
 | aoi_data.csv | Dataframe containing the AOI boxes for each of the webpage elements. |
+| survey_responses_answers.pdf | Latex table with all the survey questions and their possible resposnes. |
