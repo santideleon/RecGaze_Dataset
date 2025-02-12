@@ -190,8 +190,8 @@ UvA_4 {20}
 | git_webpage_creation\Final_Carousel_study_screen_[].html | The 40 (+1 one test screen called 00 for explaining the study to participants) html screens used in the study. | 
 | git_webpage_creation\carousels-study-netflix\assets\poster_images_resize | Downloaded poster images used in the study screens. |
 | positions_db\positions_db_dump_all_pos_screen_1_AmsterdamLaptop_at_KInIT.json | JSON that contains the scrapped elements (AOIs) positions from the webpage used for creating the stimuli background and AOI boxes. |
-| final_balanced_carousel_permutations_for_study.json | JSON with the genre ordering of the free-browsing screens from 1 to 30. |
-| final_balanced_carousel_permutations_for_genre_search.json | JSON with the genre ordering of the semi-free browsing screens from 31 to 35. |
+| final_balanced_carousel_permutations_for_free_browsing.json | JSON with the genre ordering of the free-browsing screens from 1 to 30. |
+| final_balanced_carousel_permutations_for_semi_free.json | JSON with the genre ordering of the semi-free browsing screens from 31 to 35. |
 | final_balanced_carousel_permutations_for_direct_search.json | JSON with the genre ordering of the direct search screens from 36 to 40. |
 | aoi_data.csv | Dataframe containing the AOI boxes for each of the webpage elements. |
 | survey_responses_answers.pdf | Latex table with all the survey questions and their possible resposnes. |
