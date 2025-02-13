@@ -131,16 +131,16 @@ Contains all the information gathered from the users during the pre-survey, post
 | Romance_rating | string ('1 star - Awful', '2 stars - Poor', '3 stars - Ok', '4 stars - Good', '5 stars - Must Watch') | Rating given by the user for the Romance genre. |  
 | Sci-Fi_rating | string ('1 star - Awful', '2 stars - Poor', '3 stars - Ok', '4 stars - Good', '5 stars - Must Watch')' | Rating given by the user for the Sci-Fi genre. |  
 | Thriller_rating | string ('1 star - Awful', '2 stars - Poor', '3 stars - Ok', '4 stars - Good', '5 stars - Must Watch') | Rating given by the user for the Thriller genre. |  
-| Topic_genre | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for genre-based recommendations. Not included in public dataset. |  
-| Topic_content | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for content-based recommendations. Not included in public dataset. |  
-| Topic_personalized | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for personalized recommendations. Not included in public dataset. |  
-| Topic_itemBased | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for item-based recommendations. Not included in public dataset. |  
-| Topic_userBased | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for user-based recommendations. Not included in public dataset. |  
-| Topic_expertBased | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for expert-based recommendations. Not included in public dataset. |  
-| Topic_regionalTop | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for regional top recommendations. Not included in public dataset. |  
-| Topic_globalTop | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for global top recommendations. Not included in public dataset. |  
-| Topic_temporal | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for time-based recommendations. Not included in public dataset. |  
-| Topic_exclusive | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for exclusive recommendations. Not included in public dataset. |  
+| Topic_genre | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for genre-based topics. Not included in public dataset. |  
+| Topic_content | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for content-based topics. Not included in public dataset. |  
+| Topic_personalized | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for personalized topics. Not included in public dataset. |  
+| Topic_itemBased | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for item-based topics. Not included in public dataset. |  
+| Topic_userBased | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for user-based topics. Not included in public dataset. |  
+| Topic_expertBased | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for expert-based topics. Not included in public dataset. |  
+| Topic_regionalTop | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for regional top topics. Not included in public dataset. |  
+| Topic_globalTop | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for global top topics. Not included in public dataset. |  
+| Topic_temporal | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for time-based topics. Not included in public dataset. |  
+| Topic_exclusive | string ('Helpful', 'Very helpful', 'Unhelpful', 'Neutral','Very unhelpful', 'I do not know') | Rating for exclusive topics. Not included in public dataset. |  
 | MAX_Q1 | int (1-7) | Score for question 1 of the Brief Maximization Scale. |  
 | MAX_Q2 | int (1-7) | Score for question 2 of the Brief Maximization Scale. |  
 | MAX_Q3 | int (1-7) | Score for question 3 of the Brief Maximization Scale. |  
