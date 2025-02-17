@@ -188,9 +188,9 @@ UvA_4 {20}
 ## Repository Guide
 | File/Folder Name | Explanation 
 | -------- | -------- | 
-| git_webpage_creation | Contains all the code for generating the carousel webpages used in the study. | 
-| git_webpage_creation\Final_Carousel_study_screen_[].html | The 40 (+1 one test screen called 00 for explaining the study to participants) html screens used in the study. | 
-| git_webpage_creation\carousels-study-netflix\assets\poster_images_resize | Downloaded poster images used in the study screens. |
+| carousels-study-netflix | Contains all the code for generating the carousel webpages used in the study. | 
+| carousels-study-netflix\Final_Carousel_study_screen_[].html | The 40 (+1 one test screen called 00 for explaining the study to participants) html screens used in the study. | 
+| carousels-study-netflix\assets\poster_images_resize | Downloaded poster images used in the study screens. |
 | final_balanced_carousel_permutations_for_free_browsing.json | JSON with the genre ordering of the free-browsing screens from 1 to 30. |
 | final_balanced_carousel_permutations_for_semi_free.json | JSON with the genre ordering of the semi-free browsing screens from 31 to 35. |
 | final_balanced_carousel_permutations_for_direct_search.json | JSON with the genre ordering of the direct search screens from 36 to 40. |
