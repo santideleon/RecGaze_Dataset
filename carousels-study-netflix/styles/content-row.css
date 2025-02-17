@@ -1,0 +1,54 @@
+.content-row {
+  margin: 3vw 0;
+  padding: 0 4%;
+  gap: 0.5vw;
+}
+
+.content {
+  width: 18vw;
+  display: inline-block;
+  margin-right: 10px;
+  position: relative;
+  cursor: pointer;
+}
+
+.content img {
+  max-width: 100%;
+}
+
+.slider {
+  overflow-x: visible;
+  white-space: nowrap;
+  display: inline-block;
+}
+
+.details {
+  position: absolute; 
+  z-index: 3; 
+  color: black; 
+  padding: 5px 5px 5px 5px; 
+  font-size: 12px;
+  white-space: normal;
+  width: inherit;
+  max-height: calc(18vw*0.57);
+  overflow: hidden;
+}
+
+.details h1 {
+  font-size: 18px;
+}
+
+.details div {
+  margin-top: 5px;
+}
+
+.subheading {
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .content {
+    width: 50%;
+    margin-right: 0;
+  }
+}

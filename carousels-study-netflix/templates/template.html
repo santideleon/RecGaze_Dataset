@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Netflix</title>
+
+    <link href="./assets/images/favicon.ico" rel="icon" type="image/x-icon" />
+
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+    <link href="./styles/index.css" rel="stylesheet" type="text/css" />
+    <!-- <link href="./styles/nav.css" rel="stylesheet" type="text/css" /> -->
+    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/top.css" rel="stylesheet" type="text/css" />
+    <link href="./styles/content-row.css" rel="stylesheet" type="text/css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!--
+      <nav>
+        <div class="left">
+        <img src="./assets/images/logo.png" class="brand" />
+        <div class="nav-item small">Browse</div>
+        <ul class="nav-items">
+          <li class="nav-item">Home</li>
+          <li class="nav-item">TV Shows</li>
+          <li class="nav-item">Movies</li>
+          <li class="nav-item">New & Popular</li>
+          <li class="nav-item">My List</li>
+          <li class="nav-item">Browse by Languages</li>
+        </ul>
+        </div>
+        <div class="right">
+        <ul class="nav-icons">
+          <div class="nav-item icon">
+          <i data-feather="search"></i>
+          </div>
+          <div class="nav-item icon">
+          <i data-feather="bell"></i>
+          </div>
+          <div class="nav-item icon">
+          <img
+            src="https://occ-0-6247-2164.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY20DrC9-11ewwAs6nfEgb1vrORxRPP9IGmlW1WtKuaLIz8VxCx5NryzDK3_ez064IsBGdXjVUT59G5IRuFdqZlCJCneepU.png?r=229"
+            alt="profile icon"
+          />
+          <i class="hide" data-feather="chevron-down"></i>
+          </div>
+        </ul>
+        </div>
+      </nav>
+    -->
+
+    <main>
+      <div class="top">
+        <div class="content-row column">
+          <div class="title"><span class="carousel_name">{{first_carousel['name']}}</span></div>
+          <div class="slider">
+            {% for show in first_carousel['shows'] %}
+            <div class="content">
+              <div class="details hidden">
+                <h1>{{show['title']}} ({{show['year']}})</h1>
+                <div><p class="genre"><span class="subheading">Genre:</span> {{show['genre']}}</p></div>
+                <div><p class="cast"><span class="subheading">Cast:</span> {{show['cast']}}</p></div>
+                <div class="synopsis">{{show['synopsis']}}</div>
+              </div>
+              <div class="poster">
+                <img
+                  src="{{show['poster_source']}}"
+                />
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+
+      {% for carousel in carousels %}
+      <div class="content-row column">
+        <div class="title"><span class="carousel_name">{{carousel['name']}}</span></div>
+        <div class="slider">
+          {% for show in carousel['shows'] %}
+          <div class="content">
+            <div class="details hidden">
+              <h1>{{show['title']}} ({{show['year']}})</h1>
+              <div><p class="genre"><span class="subheading">Genre:</span> {{show['genre']}}</p></div>
+              <div><p class="cast"><span class="subheading">Cast:</span> {{show['cast']}}</p></div>
+              <div class="synopsis">{{show['synopsis']}}</div>
+            </div>
+            <div class="poster">
+              <img
+                src="{{show['poster_source']}}"
+              />
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      {% endfor %}
+    </main>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./scripts/nav.js"></script>
+    <script src="./scripts/tracker.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script>
+      feather.replace();
+    </script>
+  </body>
+</html>
