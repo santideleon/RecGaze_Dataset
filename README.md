@@ -190,7 +190,7 @@ UvA_4 {20}
 | -------- | -------- | 
 | carousels-study-netflix | Contains all the code for generating the carousel webpages used in the study. | 
 | carousels-study-netflix\Final_Carousel_study_screen_[].html | The 40 (+1 one test screen called 00 for explaining the study to participants) html screens used in the study. | 
-| carousels-study-netflix\assets\poster_images_resize | Downloaded poster images used in the study screens. |
+| carousels-study-netflix\assets\poster_images_resize | Location where to place downloaded movie poster images fromn Zenodo. |
 | final_balanced_carousel_permutations_for_free_browsing.json | JSON with the genre ordering of the free-browsing screens from 1 to 30. |
 | final_balanced_carousel_permutations_for_semi_free.json | JSON with the genre ordering of the semi-free browsing screens from 31 to 35. |
 | final_balanced_carousel_permutations_for_direct_search.json | JSON with the genre ordering of the direct search screens from 36 to 40. |
