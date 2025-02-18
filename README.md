@@ -36,7 +36,7 @@ Contains all the feedback (fixations, clicks, cursor movements) data gathered du
 
 Event types:
 - Fixation_AOI_[] - Rows/columns referring to fixation events using the first fixation AOI determination method: strict AOI bounds (see paper)
-- Fixation_AOI_Closest_[] - Rows/columns referring to fixation events using the second fixation AOI determination method: if first method fails (Background) then assigns to closest AOI within 60 pixels (see paper)
+- Fixation_AOI_Closest_[] - Rows/columns referring to fixation events using the second fixation AOI determination method: if first method fails ('Background') then assigns to closest AOI within 60 pixels (see paper)
 - Click_AOI_[] - Rows/columns referring to click events on the webpage. Note: they have no duration.
 - Cursor_AOI_[] - Rows_columns referring to cursor movement events on the webpage. All cursor events in the same AOI (without exiting that AOI and entering another) are aggregated together and are included in the duration. 
 
@@ -63,6 +63,9 @@ Event types:
 
 
 ### Click Feedback Dataframe (click_feedback.csv)
+
+Summary dataframe, primarily for click modeling and other Recommender usages, that only contains the last movie selection click per user, screen pair. For a particular screen, if a user did not select a movie then it is not included in the dataset. 
+
 | Column Name | Possible Values | Explanation |  
 |------------|----------------|-------------|  
 | UserID | string (KInIT_1-61 or UvA_1-26) | Institute where the data was gathered, followed by a simple ID for the participant. |  
