@@ -18,6 +18,21 @@ Double check Supplementary
 Carousel interfaces are widely used in e-commerce and streaming services, but little research is devoted to them. Previous studies of interfaces for presenting search and recommendation results have focused on single ranked lists, but it appears their results cannot be extrapolated to carousels due to the added complexity. Eye tracking is a highly informative approach to understanding how users click, yet there are no eye tracking studies concerning carousels. There are very few interaction datasets on recommenders with carousel interfaces and none that contain gaze data. We introduce the RecGaze dataset: the first comprehensive feedback dataset on carousels that includes eye tracking results, clicks, cursor movements, and selection explanations. The dataset comprises of interactions from 3  movie selection tasks with $40$ different carousel interfaces per user. In total, 87 users and 3,477 interactions are logged. In addition to the dataset, its description and possible use cases, we provide results of a survey on carousel design and the first analysis of gaze data on carousels, which reveals a golden triangle or F-pattern browsing behavior. Our work seeks to advance the field of carousel interfaces by providing the first dataset with eye tracking results on carousels. In this manner, we provide and encourage an empirical understanding of interactions with carousel interfaces, for building better gaze-based recommendation systems.
 
 
+## Repository Guide
+| File/Folder Name | Explanation 
+| -------- | -------- | 
+| carousels-study-netflix | Contains all the code for generating the carousel webpages used in the study. | 
+| carousels-study-netflix\Final_Carousel_study_screen_[].html | The 40 (+1 one test screen called 00 for explaining the study to participants) html screens used in the study. | 
+| carousels-study-netflix\assets\poster_images_resize | Location where to place downloaded movie poster images fromn Zenodo. |
+| final_balanced_carousel_permutations_for_free_browsing.json | JSON with the genre ordering of the free-browsing screens from 1 to 30. |
+| final_balanced_carousel_permutations_for_semi_free.json | JSON with the genre ordering of the semi-free browsing screens from 31 to 35. |
+| final_balanced_carousel_permutations_for_direct_search.json | JSON with the genre ordering of the direct search screens from 36 to 40. |
+| aoi_data.csv | Dataframe containing the AOI boxes for each of the webpage elements. |
+| survey_responses_answers.pdf | Latex table with all the survey questions and their possible resposnes. |
+| Stimuli_Background.png | Fixed stimuli background image that is a to-scale copy of the webpages of the user study extended to 3 pages to be able to show horizontal displacement from swipes.
+| Direct_Search_Targets.png | Fixed stimuli background image with the direct search targets marked on the image. |
+
+
 ## Dataset Explanation
 
 ### Summary Feedback Dataframe (summary_feedback.csv)
@@ -185,17 +200,4 @@ KINIT_51 {3}
 UvA_4 {20}
 
 
-## Repository Guide
-| File/Folder Name | Explanation 
-| -------- | -------- | 
-| carousels-study-netflix | Contains all the code for generating the carousel webpages used in the study. | 
-| carousels-study-netflix\Final_Carousel_study_screen_[].html | The 40 (+1 one test screen called 00 for explaining the study to participants) html screens used in the study. | 
-| carousels-study-netflix\assets\poster_images_resize | Location where to place downloaded movie poster images fromn Zenodo. |
-| final_balanced_carousel_permutations_for_free_browsing.json | JSON with the genre ordering of the free-browsing screens from 1 to 30. |
-| final_balanced_carousel_permutations_for_semi_free.json | JSON with the genre ordering of the semi-free browsing screens from 31 to 35. |
-| final_balanced_carousel_permutations_for_direct_search.json | JSON with the genre ordering of the direct search screens from 36 to 40. |
-| aoi_data.csv | Dataframe containing the AOI boxes for each of the webpage elements. |
-| survey_responses_answers.pdf | Latex table with all the survey questions and their possible resposnes. |
-| Stimuli_Background.png | Fixed stimuli background image that is a to-scale copy of the webpages of the user study extended to 3 pages to be able to show horizontal displacement from swipes.
-| Direct_Search_Targets.png | Fixed stimuli background image with the direct search targets marked on the image. |
 
