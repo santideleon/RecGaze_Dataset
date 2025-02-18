@@ -1,12 +1,14 @@
 # RecGaze Dataset 
 
-This is the repository for the paper: `RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces`. Link to paper:
+This is the repository for the paper: `RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces`. 
+
+Link to paper:
+
+Bibtex:
 
 The public dataset can be downloaded from the Zenodo link: 
 
 For the non-public dataset, please reach out to the authors of the dataset. email: 
-
-Bibtex:
 
 
 ## Abstract 
