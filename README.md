@@ -36,7 +36,7 @@ Contains all the feedback (fixations, clicks, cursor movements) data gathered du
 
 Event types:
 - Fixation_AOI_[] - Rows/columns referring to fixation events using the first fixation AOI determination method: strict AOI bounds (see paper)
-- Fixation_AOI_Closest_[] - Rows/columns referring to fixation events using the second fixation AOI determination method: if first method fails (NA) then assigns to closest AOI within 60 pixels (see paper)
+- Fixation_AOI_Closest_[] - Rows/columns referring to fixation events using the second fixation AOI determination method: if first method fails (Background) then assigns to closest AOI within 60 pixels (see paper)
 - Click_AOI_[] - Rows/columns referring to click events on the webpage. Note: they have no duration.
 - Cursor_AOI_[] - Rows_columns referring to cursor movement events on the webpage. All cursor events in the same AOI (without exiting that AOI and entering another) are aggregated together and are included in the duration. 
 
