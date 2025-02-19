@@ -30,7 +30,7 @@ Carousel interfaces are widely used in e-commerce and streaming services, but li
 | Direct_Search_Targets.png | Fixed stimuli background image with the direct search targets marked on the image. |
 
 
-## Sample Screen Recording (of study staff not included in dataset)
+## Sample Screen Recording (test user not included in dataset)
 <img src="https://github.com/santideleon/RecGaze_Dataset/blob/main/sample_screen_hq.gif">
 
 ## Dataset Explanation
