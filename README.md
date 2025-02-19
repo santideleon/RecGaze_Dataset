@@ -14,9 +14,6 @@ For the non-public dataset, please reach out to the authors of the dataset. emai
 ## Abstract 
 Carousel interfaces are widely used in e-commerce and streaming services, but little research is devoted to them. Previous studies of interfaces for presenting search and recommendation results have focused on single ranked lists, but it appears their results cannot be extrapolated to carousels due to the added complexity. Eye tracking is a highly informative approach to understanding how users click, yet there are no eye tracking studies concerning carousels. There are very few interaction datasets on recommenders with carousel interfaces and none that contain gaze data. We introduce the RecGaze dataset: the first comprehensive feedback dataset on carousels that includes eye tracking results, clicks, cursor movements, and selection explanations. The dataset comprises of interactions from 3  movie selection tasks with $40$ different carousel interfaces per user. In total, 87 users and 3,477 interactions are logged. In addition to the dataset, its description and possible use cases, we provide results of a survey on carousel design and the first analysis of gaze data on carousels, which reveals a golden triangle or F-pattern browsing behavior. Our work seeks to advance the field of carousel interfaces by providing the first dataset with eye tracking results on carousels. In this manner, we provide and encourage an empirical understanding of interactions with carousel interfaces, for building better gaze-based recommendation systems.
 
-## Sample Screen Recording (of study staff not included in dataset)
-<img src="https://github.com/santideleon/RecGaze_Dataset/blob/main/sample_screen_hq.gif">
-
 
 ## Repository Guide
 | File/Folder Name | Explanation 
@@ -32,6 +29,9 @@ Carousel interfaces are widely used in e-commerce and streaming services, but li
 | Stimuli_Background.png | Fixed stimuli background image that is a to-scale copy of the webpages of the user study extended to 3 pages to be able to show horizontal displacement from swipes.
 | Direct_Search_Targets.png | Fixed stimuli background image with the direct search targets marked on the image. |
 
+
+## Sample Screen Recording (of study staff not included in dataset)
+<img src="https://github.com/santideleon/RecGaze_Dataset/blob/main/sample_screen_hq.gif">
 
 ## Dataset Explanation
 
