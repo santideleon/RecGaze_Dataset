@@ -17,14 +17,6 @@ Carousel interfaces are widely used in e-commerce and streaming services, but li
 ## Sample Screen Recording (of study staff not included in dataset)
 
 
-
-https://github.com/user-attachments/assets/a9fadf14-fb3d-495d-ae2b-d9f8d42f5054
-
-
-
-
-
-
 ## Repository Guide
 | File/Folder Name | Explanation 
 | -------- | -------- | 
