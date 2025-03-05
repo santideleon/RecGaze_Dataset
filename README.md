@@ -132,7 +132,7 @@ Contains all the information gathered from the users during the pre-survey, post
 | SubjectIDs | int | Unique IDs assigned to participants in the user study system. |  
 | Age | string ('18-19', '20-29', '30-39', '40-49', '60-69') | Participant's age in years. Not included in public dataset. |  
 | Gender | string ('Man', 'Woman', 'Non-binary') | Participant's self-reported gender. Not included in public dataset.  |  
-| Location | string ('Bratislava', 'Amsterdam') | Country or region of the participant. |  
+| Location | string ('Bratislava', 'Amsterdam') | City where the study was administered. |  
 | First_task | string ('Semi_free_direct_search', 'Free_browsing') | First assigned task in the study. |  
 | Netflix_user | string ('Yes', 'No') | Indicates if the participant has used Netflix or a similar streaming service before. |  
 | Netflix_usage | string ('Every day', '5 or more times per week', '3-4 times per week', '1-2 times per week', '1-2 times per month') | Frequency of Netflix usage. |  
