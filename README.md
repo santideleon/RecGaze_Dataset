@@ -51,7 +51,7 @@ Event types:
 
 | Column Name | Possible Values | Explanation |  
 |------------|----------------|-------------|  
-| UserID | string (KInIT_1-61 or UvA_1-26) | Institute where the data was gathered, followed by a simple ID for the participant. |  
+| UserID | string (ANON_1-61 or ANON_1-26) | Institute where the data was gathered, followed by a simple ID for the participant. |  
 | SubjectID | int | Identifier assigned to participants in the user study system. Can be ignored for the public dataset. |  
 | TaskID | int (1-40)  | Identifier for the screen/task from which data was gathered. 1-30 are the 30 Free-browsing tasks/screens. 31-35 are the 5 Semi-free browsing tasks/screens. And 36-40 are the 5 direct search tasks/screens. |  
 | StimulusID | string | The filename of the video screen recording (for use in the non-public dataset). Can be ignored for the public dataset. |  
@@ -73,7 +73,7 @@ Summary dataframe, primarily for click modeling and other Recommender usages, th
 
 | Column Name | Possible Values | Explanation |  
 |------------|----------------|-------------|  
-| UserID | string (KInIT_1-61 or UvA_1-26) | Institute where the data was gathered, followed by a simple ID for the participant. |  
+| UserID | string (ANON_1-61 or ANON2_1-26) | Institute where the data was gathered, followed by a simple ID for the participant. |  
 | SubjectID | int | Identifier assigned to participants in the user study system. Can be ignored for the public dataset. |  
 | TaskID | int (1-40)  | Identifier for the screen/task from which data was gathered. 1-30 are Free-browsing tasks/screens, 31-35 are Semi-free browsing tasks/screens, and 36-40 are Direct search tasks/screens. |  
 | StimulusID | string | The filename of the video screen recording (for use in the non-public dataset). Can be ignored for the public dataset. |  
@@ -128,7 +128,7 @@ Contains all the information gathered from the users during the pre-survey, post
 | Column Name | Possible Values | Explanation |  
 |------------|----------------|-------------|  
 | Pre_survey_timestamp | datetime (MM-DD-YYYY HH:MM) | Timestamp when the pre-survey was completed. |  
-| UserID | KInIT_1-61 or UvA_1-26 | Institute where the data was gathered, followed by a simple participant ID. |  
+| UserID | ANON_1-61 or ANON2_1-26 | Institute where the data was gathered, followed by a simple participant ID. |  
 | SubjectIDs | int | Unique IDs assigned to participants in the user study system. |  
 | Age | string ('18-19', '20-29', '30-39', '40-49', '60-69') | Participant's age in years. Not included in public dataset. |  
 | Gender | string ('Man', 'Woman', 'Non-binary') | Participant's self-reported gender. Not included in public dataset.  |  
@@ -184,23 +184,23 @@ Contains all the information gathered from the users during the pre-survey, post
 ## Missing or Erroneous Data
 The following UserIDs and TaskIDs are the screens where we found that the participant failed to complete the direct search tasks:
 
-KINIT_18 {38}
+ANON_18 {38}
 
-KINIT_21 {38}
+ANON_21 {38}
 
-KINIT_28 {36, 37, 39}
+ANON_28 {36, 37, 39}
 
-KINIT_46 {36} 
+ANON_46 {36} 
 
-KINIT_61 {38}
+ANON_61 {38}
 
 The following UserIDs and TaskIDs are the screens where a participant did select a movie in the free-browsing or semi-free browsing task, but the final movie selection click is missing from the data:
 
-KINIT_21 {18}
+ANON_21 {18}
 
-KINIT_51 {3}
+ANON_51 {3}
 
-UvA_4 {20}
+ANON2_4 {20}
 
 
 
