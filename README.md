@@ -10,8 +10,7 @@ Branislav Kveton, Harrie Oosterhuis, and Maria Bielikova. 2025. RecGaze:
 The First Eye Tracking and User Interaction Dataset for Carousel Interfaces.
 In Proceedings of the 48th International ACM SIGIR Conference on Research
 and Development in Information Retrieval (SIGIR ’25), July 13–18, 2025, Padua,
-Italy. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3726302.
-3730301 
+Italy. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3726302.3730301 
 
 The public and non-public dataset can be found at [Zenodo](https://zenodo.org/records/15270518)
 
