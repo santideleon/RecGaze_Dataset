@@ -2,13 +2,12 @@
 
 This is the repository for the paper: `RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces`. 
 
-Link to paper:
+Link to paper: [SIGIR 2025](https://doi.org/10.1145/3726302.3730301), [Arxiv](https://zenodo.org/records/15270518),
 
-Bibtex:
+Bibtex: 
 
-The public dataset can be downloaded from the Zenodo link: 
+The public and non-public dataset can be found at [Zenodo](https://zenodo.org/records/15270518)
 
-For the non-public dataset, please reach out to the authors of the dataset. email: 
 
 
 ## Abstract 
