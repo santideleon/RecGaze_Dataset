@@ -4,7 +4,17 @@ This is the repository for the paper: `RecGaze: The First Eye Tracking and User 
 
 Link to open-acess paper: [SIGIR 2025](https://doi.org/10.1145/3726302.3730301), [Arxiv](https://arxiv.org/abs/2504.20792)
 
+Arxiv bibtex:
+
+ @article{de2025recgaze,
+  title={RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces},
+  author={de Leon-Martinez, Santiago and Kang, Jingwei and Moro, Robert and de Rijke, Maarten and Kveton, Branislav and Oosterhuis, Harrie and Bielikova, Maria},
+  journal={arXiv preprint arXiv:2504.20792},
+  year={2025}
+}
+
 ACM Reference: 
+
 Santiago de Leon-Martinez, Jingwei Kang, Robert Moro, Maarten de Rijke,
 Branislav Kveton, Harrie Oosterhuis, and Maria Bielikova. 2025. RecGaze:
 The First Eye Tracking and User Interaction Dataset for Carousel Interfaces.
