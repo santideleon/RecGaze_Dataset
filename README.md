@@ -2,7 +2,7 @@
 
 This is the repository for the paper: `RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces`. 
 
-Link to open-acess paper: [SIGIR 2025](https://doi.org/10.1145/3726302.3730301), [Arxiv](https://zenodo.org/records/15270518),
+Link to open-acess paper: [SIGIR 2025](https://doi.org/10.1145/3726302.3730301), [Arxiv]([https://zenodo.org/records/15270518](https://arxiv.org/abs/2504.20792))
 
 ACM Reference: 
 Santiago de Leon-Martinez, Jingwei Kang, Robert Moro, Maarten de Rijke,
