@@ -71,7 +71,7 @@ Event types:
 | TaskID | int (1-40)  | Identifier for the screen/task from which data was gathered. 1-30 are the 30 Free-browsing tasks/screens. 31-35 are the 5 Semi-free browsing tasks/screens. And 36-40 are the 5 direct search tasks/screens. |  
 | StimulusID | string | The filename of the video screen recording (for use in the non-public dataset). Can be ignored for the public dataset. |  
 | Timestamp | float | Timestamp of the event/row in seconds, aligned with the 0:00 start time of the video recording. Data before webpage load and after movie selection is removed. |  
-| []_Duration | float | Duration in seconds of the event (e.g., Fixation, Click, Cursor). |  
+| []_Duration | float | Duration in seconds of the event (e.g., Click, Cursor) except for Fixations which are in ms. |  
 | []_AOI_type | string (NA, 'Movie', 'Genre', 'Forward', 'Backward', "Background') | Type of the target Area of Interest (AOI). 'Movie' refers to a movie poster, 'Genre' is the genre/topic text, 'Forward' is the right swipe button, 'Backward' is the left swipe button, and 'Background' is background of the webpage or non-AOI. |  
 | []_AOI_MovieID | int | If the event targets a movie, this shows the TMDB MovieID (same as `MovieID` in `item_features.csv`). If not, it is NA. |  
 | []_AOI_Movie_position_in_carousel | int (1-15) | If targeting a movie, this indicates its position in the carousel (same as `Movie_position_in_carousel` in `item_features.csv`). If not, it is NA. Movies 1-5 are initially shown with the highest ranking (by votes). A forward swipe is required to reach 6-10, another for 11-15, and a third returns to 1-5. Backward swipes move in the opposite direction. |  
