@@ -1,5 +1,4 @@
 # RecGaze Dataset 
-
 This is the repository for the paper: `RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces`. 
 
 Link to open-acess paper: [SIGIR 2025](https://doi.org/10.1145/3726302.3730301), [Arxiv](https://arxiv.org/abs/2504.20792)
@@ -28,6 +27,10 @@ The public and non-public dataset can be found at [Zenodo](https://zenodo.org/re
 
 ## Abstract 
 Carousel interfaces are widely used in e-commerce and streaming services, but little research is devoted to them. Previous studies of interfaces for presenting search and recommendation results have focused on single ranked lists, but it appears their results cannot be extrapolated to carousels due to the added complexity. Eye tracking is a highly informative approach to understanding how users click, yet there are no eye tracking studies concerning carousels. There are very few interaction datasets on recommenders with carousel interfaces and none that contain gaze data. We introduce the RecGaze dataset: the first comprehensive feedback dataset on carousels that includes eye tracking results, clicks, cursor movements, and selection explanations. The dataset comprises of interactions from 3  movie selection tasks with $40$ different carousel interfaces per user. In total, 87 users and 3,477 interactions are logged. In addition to the dataset, its description and possible use cases, we provide results of a survey on carousel design and the first analysis of gaze data on carousels, which reveals a golden triangle or F-pattern browsing behavior. Our work seeks to advance the field of carousel interfaces by providing the first dataset with eye tracking results on carousels. In this manner, we provide and encourage an empirical understanding of interactions with carousel interfaces, for building better gaze-based recommendation systems.
+
+
+## Survey Results on Carousel Design (not included in paper)
+![carousel_topic_helpful](https://github.com/user-attachments/assets/bda09add-9241-44ea-889f-9cf1c0299db8)
 
 
 ## Repository Guide
