@@ -3,23 +3,25 @@ This is the repository for the paper: `RecGaze: The First Eye Tracking and User 
 
 Link to open-acess paper: [SIGIR 2025](https://doi.org/10.1145/3726302.3730301), [Arxiv](https://arxiv.org/abs/2504.20792)
 
-Arxiv bibtex:
+Bibtex:
 
- @article{de2025recgaze,
-  title={RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces},
-  author={de Leon-Martinez, Santiago and Kang, Jingwei and Moro, Robert and de Rijke, Maarten and Kveton, Branislav and Oosterhuis, Harrie and Bielikova, Maria},
-  journal={arXiv preprint arXiv:2504.20792},
-  year={2025}
+@inproceedings{10.1145/3726302.3730301,
+author = {de Leon-Martinez, Santiago and Kang, Jingwei and Moro, Robert and de Rijke, Maarten and Kveton, Branislav and Oosterhuis, Harrie and Bielikova, Maria},
+title = {RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces},
+year = {2025},
+isbn = {9798400715921},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3726302.3730301},
+doi = {10.1145/3726302.3730301},
+abstract = {Carousel interfaces are widely used in e-commerce and streaming services, but little research has been devoted to them. Previous studies of interfaces for presenting search and recommendation results have focused on single ranked lists, but it appears their results cannot be extrapolated to carousels due to the added complexity. Eye tracking is a highly informative approach to understanding how users click, yet there are no eye tracking studies concerning carousels. There are very few interaction datasets on recommenders with carousel interfaces and none that contain gaze data. We introduce the RecGaze dataset: the first comprehensive feedback dataset on carousels that includes eye tracking results, clicks, cursor movements, and selection explanations. The dataset comprises of interactions from 3 movie selection tasks with 40 different carousel interfaces per user. In total, 87 users and 3,477 interactions are logged. In addition to the dataset, its description and possible use cases, we provide results of a survey on carousel design and the first analysis of gaze data on carousels, which reveals a golden triangle or F-pattern browsing behavior. Our work seeks to advance the field of carousel interfaces by providing the first dataset with eye tracking results on carousels. In this manner, we provide and encourage an empirical understanding of interactions with carousel interfaces, for building better recommender systems through gaze information, and also encourage the development of gaze-based recommenders.},
+booktitle = {Proceedings of the 48th International ACM SIGIR Conference on Research and Development in Information Retrieval},
+pages = {3702–3711},
+numpages = {10},
+keywords = {browsing behavior, carousel interfaces, eye tracking},
+location = {Padua, Italy},
+series = {SIGIR '25}
 }
-
-ACM Reference: 
-
-Santiago de Leon-Martinez, Jingwei Kang, Robert Moro, Maarten de Rijke,
-Branislav Kveton, Harrie Oosterhuis, and Maria Bielikova. 2025. RecGaze:
-The First Eye Tracking and User Interaction Dataset for Carousel Interfaces.
-In Proceedings of the 48th International ACM SIGIR Conference on Research
-and Development in Information Retrieval (SIGIR ’25), July 13–18, 2025, Padua,
-Italy. ACM, New York, NY, USA, 10 pages. https://doi.org/10.1145/3726302.3730301 
 
 The public and non-public dataset can be found at [Zenodo](https://zenodo.org/records/15270518)
 
