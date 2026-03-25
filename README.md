@@ -3,6 +3,12 @@ This is the repository for the paper: `RecGaze: The First Eye Tracking and User 
 
 Link to open-acess paper: [SIGIR 2025](https://doi.org/10.1145/3726302.3730301), [Arxiv](https://arxiv.org/abs/2504.20792)
 
+The public and non-public dataset can be found at [Zenodo](https://zenodo.org/records/15270518)
+
+Follow-up eye tracking analysis of user browsing behavior [IUI 2026](https://dl.acm.org/doi/10.1145/3742413.3789166)
+
+Please cite the following: 
+
 Bibtex:
 
 @inproceedings{10.1145/3726302.3730301,
@@ -23,8 +29,24 @@ location = {Padua, Italy},
 series = {SIGIR '25}
 }
 
-The public and non-public dataset can be found at [Zenodo](https://zenodo.org/records/15270518)
-
+@inproceedings{10.1145/3742413.3789166,
+author = {de Leon-Martinez, Santiago and Moro, Robert and Kveton, Branislav and Bielikova, Maria},
+title = {Riding the Carousel: The First Extensive Eye Tracking Analysis of Browsing Behavior in Carousel Recommenders},
+year = {2026},
+isbn = {9798400719844},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3742413.3789166},
+doi = {10.1145/3742413.3789166},
+abstract = {Carousels have become the de-facto standard user interface in online services. However, there is a lack of research in carousels, particularly examining how recommender systems may be designed differently than the traditional single-list interfaces. One of the key elements for understanding how to design a system for a particular interface is understanding how users browse. For carousels, users may browse in a number of different ways due to the added complexity of multiple topic defined-lists and swiping to see more items. Eye tracking is the key to understanding user behavior by providing valuable, direct information on how users see and navigate. In this work, we provide the first extensive analysis of the eye tracking behavior in carousel recommenders under the free-browsing setting. To understand how users browse and model their behavior, we examine the following research questions : 1) where do users start browsing, 2) how do users transition from item to item within the same carousel and across carousels, and 3) how does genre preference impact transitions? This work addresses a gap in the field and provides the first extensive empirical results of eye tracked browsing behavior in carousels for improving recommenders. Taking into account the insights learned from the above questions, our final contribution is to provide takeaways for carousel recommender system designers to better optimize their systems for user browsing behavior. The most important being an improved reordering of the ranked item positions to account for browsing behavior after swiping. These contributions aim not only to help improve current systems, but also to encourage and allow the design of new user models, systems, and metrics that are better suited to the complexity of carousel interfaces.},
+booktitle = {Proceedings of the 31st International Conference on Intelligent User Interfaces},
+pages = {2120–2130},
+numpages = {11},
+keywords = {Carousel interfaces, Multi-list recommendations, Browsing behavior, Eye tracking},
+location = {
+},
+series = {IUI '26}
+}
 
 
 ## Abstract 
