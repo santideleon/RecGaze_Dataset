@@ -5,7 +5,7 @@ Link to open-acess paper: [SIGIR 2025](https://doi.org/10.1145/3726302.3730301),
 
 The public and non-public dataset can be found at [Zenodo](https://zenodo.org/records/15270518)
 
-Follow-up eye tracking analysis of user browsing behavior [IUI 2026](https://dl.acm.org/doi/10.1145/3742413.3789166)
+Follow-up eye tracking analysis of user browsing behavior: [IUI 2026](https://dl.acm.org/doi/10.1145/3742413.3789166)
 
 Please cite the following: 
 
