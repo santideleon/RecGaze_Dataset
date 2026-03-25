@@ -9,8 +9,6 @@ Follow-up eye tracking analysis of user browsing behavior: [IUI 2026](https://dl
 
 Please cite the following: 
 
-Bibtex:
-
 @inproceedings{10.1145/3726302.3730301,
 author = {de Leon-Martinez, Santiago and Kang, Jingwei and Moro, Robert and de Rijke, Maarten and Kveton, Branislav and Oosterhuis, Harrie and Bielikova, Maria},
 title = {RecGaze: The First Eye Tracking and User Interaction Dataset for Carousel Interfaces},
