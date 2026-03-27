@@ -71,7 +71,7 @@ Carousel interfaces are widely used in e-commerce and streaming services, but li
 ## Sample Screen Recording (test user not included in dataset)
 <img src="https://github.com/santideleon/RecGaze_Dataset/blob/main/sample_screen_hq.gif">
 
-## Dataset Explanation
+## Zenodo Public Dataset Explanation
 
 ### Summary Feedback Dataframe (summary_feedback.csv)
 
