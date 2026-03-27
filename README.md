@@ -71,9 +71,9 @@ Carousel interfaces are widely used in e-commerce and streaming services, but li
 ## Sample Screen Recording (test user not included in dataset)
 <img src="https://github.com/santideleon/RecGaze_Dataset/blob/main/sample_screen_hq.gif">
 
-## Zenodo Public Dataset Explanation
+## Zenodo Dataset Explanation
 
-### Summary Feedback Dataframe (summary_feedback.csv)
+### [Public] Summary Feedback Dataframe (summary_feedback.csv)
 
 Contains all the feedback (fixations, clicks, cursor movements) data gathered during the movie selection screens. All events are merged together in the same dataframe on the same timestamps. An event only happens if all columns of that event type are not NA. 
 
@@ -105,7 +105,7 @@ Event types:
 | []_AOI_Carousel_genre_rating | int (1-5) | If targeting an AOI within a carousel, this shows the user’s rating (1 to 5 stars) for the genre (`[]_rating` from `user_features.csv`). Otherwise, it is NA. |  
 
 
-### Click Feedback Dataframe (click_feedback.csv)
+### [Public] Click Feedback Dataframe (click_feedback.csv)
 
 Summary dataframe, primarily for click modeling and other Recommender usages, that only contains the last movie selection click per user, screen pair. For a particular screen, if a user did not select a movie then it is not included in the dataset. 
 
@@ -130,7 +130,7 @@ Summary dataframe, primarily for click modeling and other Recommender usages, th
 
 
 
-### Item Features Dataframe (item_features.csv)
+### [Public] Item Features Dataframe (item_features.csv)
 
 Contains all the information for the movies used to create the carousel screens along with extra data that was not used for the study. 
 
@@ -158,7 +158,7 @@ Contains all the information for the movies used to create the carousel screens 
 | MovieID | int | ID for movie in dataset (same as TMDB_id). |  
 | Movie_position_in_carousel | int | The position of the movie within the carousel. |  
 
-### User Features Dataframe (user_features.csv)
+### [Public & Non-Public] User Features Dataframe (user_features.csv & non_public_user_features.csv)
 
 Contains all the information gathered from the users during the pre-survey, post-survey, and post-selection screens (selection explanations). 
 
@@ -217,6 +217,37 @@ Contains all the information gathered from the users during the pre-survey, post
 | Tiredness_level | string ('Not exhausted at all', 'Slightly exhausted', 'Somewhat exhausted', 'Exhausted','Very exhausted') | How tired the participant felt after copmletion of the study. |  
 | Distance_eyes_center_screen | float (cm) | Approximate distance from the participant’s eyes to the center of the screen. |  
 | Speed_reminder | string (NA, 'Only after first 10', 'Only after 2nd 10 (20 screens)') | Whether the participant received a speed reminder and when it happened. |  
+
+
+### [Non-Public] Feedback Dataframe (non_public_feedback_dataset.csv)
+
+Contains all the feedback (gaze, fixations, clicks, cursor movements) data gathered during the movie selection screens. All events are merged together in the same dataframe on the same timestamps. An event only happens if all columns of that event type are not NA. 
+
+
+
+
+| Column Name | Possible Values | Explanation |  
+|------------|----------------|-------------|  
+| UserID | string (KInIT_1-61 or UvA_1-26) | Institute where the data was gathered, followed by a simple ID for the participant. |  
+| SubjectID | int | Identifier assigned to participants in the user study system. Can be ignored for the public dataset. |  
+| TaskID | int (1-40)  | Identifier for the screen/task from which data was gathered. 1-30 are the 30 Free-browsing tasks/screens. 31-35 are the 5 Semi-free browsing tasks/screens. And 36-40 are the 5 direct search tasks/screens. |  
+| StimulusID | string | The filename of the video screen recording. |  
+| Timestamp | float | Timestamp of the event/row in seconds, aligned with the 0:00 start time of the video recording. Data before webpage load and after movie selection is removed. |  
+| []_LocX | float | x pixel coordinate location on the screen not adjusted for swipinig (horizontal scrolling)|
+| []_LocX_scroll | float | x pixel coordinate location on the screen adjusted for swipinig (horizontal scrolling). |
+| []_LocY | float | y pixel coordinate location on the screen. For fixations, clicks, and cursor, the y pixel coordinate is already adjusted for the vertical scrolling of the webpage and for the top of the page browser bar (+87 to y coordinates, which allows fit to screen recordings). For gaze, the y pixel coordinate is completely raw without adjusting for scrolling meaning it is the true vertical location the eyes are observing on the screen. As the scroll information is not included in the gaze data, it is not possible to link gaze to AOIs through this method.| 
+| []_Target_AOI | string (NA, 'Movie_X_Genre_Y', 'Genre_Y_Text', 'Backward_swipe_Genre_Y', 'Forward_swipe_Genre_Y', 'Background') | A string containing the type of the the target Area of Interest (AOI) with its relevant position in the interface. The possible AOIs are Movie, Genre Text (label or header of the carousel, such as "Animation"), Backward swipe button, Forward swipe button, and Background. For movies, X refers the column position within the carousel (same as Movie_popsition_in_carousel in public summary feedback dataframe) from 1-15. Y refers to the row position of the carousel (same as AOI_Carousel_position in public summary feedback dataframe) from 1-10.  |
+
+
+| []_Duration | float | Duration in seconds of the event (e.g., Click, Cursor) except for Fixations which are in ms. |  
+| []_AOI_type | string (NA, 'Movie', 'Genre', 'Forward', 'Backward', "Background') | Type of the target Area of Interest (AOI). 'Movie' refers to a movie poster, 'Genre' is the genre/topic text, 'Forward' is the right swipe button, 'Backward' is the left swipe button, and 'Background' is background of the webpage or non-AOI. |  
+| []_AOI_MovieID | int | If the event targets a movie, this shows the TMDB MovieID (same as `MovieID` in `item_features.csv`). If not, it is NA. |  
+| []_AOI_Movie_position_in_carousel | int (1-15) | If targeting a movie, this indicates its position in the carousel (same as `Movie_position_in_carousel` in `item_features.csv`). If not, it is NA. Movies 1-5 are initially shown with the highest ranking (by votes). A forward swipe is required to reach 6-10, another for 11-15, and a third returns to 1-5. Backward swipes move in the opposite direction. |  
+| []_AOI_Carousel_position | int (1-10) | If targeting an AOI (Movie, Genre, Forward, Backward) within one of the 10 carousels, this indicates the position of the carousel (same as `Carousel_position` in `item_features.csv`). 1 is the first (topmost) carousel, while 10 is the last. If not targeting a carousel AOI, it is NA. |  
+| []_AOI_Carousel_genre | string (NA, 'Action', 'Animation', 'Comedy', 'Crime', 'Drama', 'Fantasy', 'Horror', 'Romance', 'Sci-Fi', 'Thriller') | If targeting an AOI within one of the 10 carousels, this indicates the genre of that carousel (same as `Carousel_genre` in `item_features.csv`). Otherwise, it is NA. |  
+| []_AOI_Carousel_genre_is_top_genre | string (NA, 'Not_Top_Genre', 'Top_Genre') | If targeting an AOI within a carousel, this shows whether the carousel’s genre is the user’s top genre (`Top_genre` from `user_features.csv`). Otherwise, it is NA. |  
+| []_AOI_Carousel_genre_is_preferred_genre | string (NA, 'Not_Preferred_Genre', 'Preferred_Genre') | If targeting an AOI within a carousel, this shows whether the carousel’s genre is one of the user’s preferred genres (`Preferred_genres` from `user_features.csv`). Otherwise, it is NA. |  
+| []_AOI_Carousel_genre_rating | int (1-5) | If targeting an AOI within a carousel, this shows the user’s rating (1 to 5 stars) for the genre (`[]_rating` from `user_features.csv`). Otherwise, it is NA. |  
 
 
 ## Missing or Erroneous Data
