@@ -7,6 +7,8 @@ The public and non-public dataset can be found at [Zenodo](https://zenodo.org/re
 
 Follow-up eye tracking analysis of user browsing behavior: [IUI 2026](https://dl.acm.org/doi/10.1145/3742413.3789166)
 
+Follow-up click modeling paper on observed examination position-based click models for carousels: [Arxiv](https://arxiv.org/abs/2602.16541)
+
 Please cite the following: 
 
 @inproceedings{10.1145/3726302.3730301,
